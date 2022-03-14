@@ -1,0 +1,64 @@
+.outer-AddTask {
+  background: linear-gradient(180deg, #8c54fb 50%, #ebe2ff 50%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTask-conatiner {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 60vh;
+  padding: 1%;
+}
+p {
+  margin: 0px;
+}
+.addTask-form {
+  /* background-color: #8c54fb; */
+  width: 80%;
+  margin-top: 10%;
+  /* margin: 10%; */
+}
+.taskInput {
+  width: 60%;
+  border-style: none;
+  border-bottom: 5px solid black;
+  height: 40px;
+  outline: none;
+  font-size: 25px;
+  margin-top: 3%;
+}
+.buttons-container {
+  margin-top: 50px;
+  width: 60%;
+  display: flex;
+}
+.submit-button {
+  background-color: transparent;
+  font-size: 25px;
+  border-style: none;
+  color: #8c54fb;
+}
+.cancel-button {
+  background-color: transparent;
+  font-size: 25px;
+  border-style: none;
+  margin-left: auto;
+  color: grey;
+}
+@media only screen and (max-width: 750px) {
+  .buttons-container {
+    margin-top: 90px;
+    width: 60%;
+    display: flex;
+  }
+  .TaskInput {
+    width: 80%;
+    margin-top: 90px;
+  }
+}
