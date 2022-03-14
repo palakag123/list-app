@@ -1,0 +1,25 @@
+.button {
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 80px;
+  width: 100%;
+}
+.plusIcon {
+  color: white;
+  font-size: 40px;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+  .plusIcon {
+    font-size: 25px;
+  }
+  .button {
+    margin-right: 20px;
+  }
+}

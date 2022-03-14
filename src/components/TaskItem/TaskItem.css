@@ -1,0 +1,19 @@
+.task-card-container {
+  display: flex;
+  /* justify-content: center; */
+}
+.taskname {
+  margin: 0px;
+  margin-left: auto;
+  font-size: 30px;
+}
+.task-edit-button {
+  margin-left: auto;
+  background-color: transparent;
+  border-style: none;
+}
+.pencil-icon {
+  /* margin-left: auto; */
+  color: white;
+  font-size: 30px;
+}
