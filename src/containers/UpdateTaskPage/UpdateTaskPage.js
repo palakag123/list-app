@@ -5,7 +5,9 @@ import "./UpdateTaskpage.css";
 const UpdateTaskpage = (props) => {
   const navigate = useNavigate();
 
-  const [enteredTask, setEnteredTask] = useState("");
+  const [enteredTask, setEnteredTask] = useState(
+    props.tasks[props.taskId - 1].taskName
+  );
   const taskUpdateHandler = (event) => {
     setEnteredTask(event.target.value);
     // console.log(props.tasks[props.taskId - 1]);

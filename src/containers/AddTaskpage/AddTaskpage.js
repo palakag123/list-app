@@ -14,7 +14,7 @@ const AddTaskpage = (props) => {
     console.log("submitted");
     event.preventDefault();
     const newTask = {
-      taskid: props.tasks.length + 1,
+      tasksid: props.tasks.length + 1,
       taskName: enteredTask,
     };
     props.addTask(newTask);

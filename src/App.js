@@ -90,9 +90,13 @@ function App() {
 
   const updateTask = (updatedTask) => {
     // list[listId - 1].tasks[taskId - 1] = updatedTask;
-    tasksList[taskId - 1].taskName = updatedTask;
-    setList(list);
-    setTasks(tasksList);
+
+    const newTaskList = tasksList.map((task) => Object.assign({}, task));
+    newTaskList[taskId - 1].taskName = updatedTask;
+    setTasks(() => newTaskList);
+    const updatedList = list.map((listItem) => Object.assign({}, listItem));
+    updatedList[listId - 1].tasks = newTaskList;
+    setList(() => updatedList);
   };
 
   return (
